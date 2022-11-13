@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+h2{
+    color: white;
+    font-size: 22px;
+}
+
+h3{
+    color: white;
+    font-size: 16;
+    text-align: center;
+}
+
+body{
+background-color: rgb(17, 17, 42);
+margin: 20px;
+min-height: 100vh;
+max-width: 100%;
+scroll-behavior: auto;
+scroll-behavior: smooth;
+scroll-behavior: inherit;
+scroll-behavior: initial;
+
+}
+
+main{
+    margin: 0px;
+}
+
+a{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 1%;
+    }
+
+.titulopagina{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    margin-top: 0%;
+    text-align: center;
+    
+}
+
+
+.subcategorias{
+    color: white;
+    font-size: 15px;
+}
+.subcategoriasprox{
+    color: white;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.padre{
+    display:flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly ;
+    align-items: center;
+    background-color: rgb(17, 17, 42);
+}
+
+.hijo{
+    flex-direction: column;
+    align-items: unset   ;
+    height: 270px;
+    width: 230px;
+}
+
+.img_card{
+    height: 80%;
+    width: 90%;
+}
+
+.titulos{
+    display: flex;
+}
+.titulosprox{
+    display: flex;
+    margin-bottom: 90px;
+}
+
+.banner{
+    max-width: 80%;
+    height: 650px;
+    margin:auto;
+    background-color: rgba(0,0,0,0.5);
+    background-image: url(../img/bannerlosanillosdelpoder.png);
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+}
+@keyframes banner{
+    0%,20%{
+        background-image: url(../img/bannerlaruedadeltiempo.jpeg);
+    }
+    21%,40%{
+        background-image: url(../img/bannerlosanillosdelpoder.png);
+    }
+    41%,60%{
+        background-image: url(../img/bannerjujutsukaisen.jpg);
+    }
+    61%,80%{
+        background-image: url(../img/bannerouterbanks.jpeg);
+    }
+    81%,100%{
+        background-image: url(../img/bannerdbs.jpg);
+    }
+}
+
+
+
+.videos{
+    display:flex;
+    flex-direction: column;
+    /* height: 400px;
+    width: 100%; */
+    justify-content: space-evenly ;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tabla{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabla td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tabla h3{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.categorias{
+    display:flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 17, 42);
+}
+
+.subcatsubcat{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.hijodelhijo{
+        flex-direction: column;
+        align-items: unset   ;
+        height: 350px;
+        width: 350px;
+    
+}
+
+@media only screen and (max-widht:600px){
+    h2{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    a{
+        font-size: 16px;
+    }
+    .banner{
+        height:auto ;
+        display: flex;
+    }
+    .padre{
+        max-width: 100%;
+        height: auto;
+    }
+}
